@@ -1,7 +1,7 @@
 import re                                                                           #re package to reverse output for final query
 def FizzBuzz_():                                                                    #function and list loop 
     _ = []
-    for i in range(1,301):                                                          # expand range to 301 to check 
+    for i in range(1,101):                                                          # expand range to 301 to check 
         if (i % 3 == 0) and (i % 5 == 0):                                           #if num % 15 == 0 #most complex piece of code #first come order 
             _.append("FizzBuzz")
         elif i % 5 == 0:
@@ -39,8 +39,8 @@ def Fezz_(test2_):
     for i in range(len(test2_)):
         if ((i+1) % 13 == 0):
             start_b =  str(test2_[i]).startswith('B')                                  #startswith to ensure output intials of B come at the end
-            if start_b:                                                                # condition and if else to get the above outcome
-                test2_[i] =  "Fezz" + test2_[i]                                        # imporvement require to split list and reorder to esnure 'Fuzz' can be in middle
+            if start_b:                                                                #condition and if else to get the above outcome
+                test2_[i] =  "Fezz" + test2_[i]                                        #imporvement require to split list and reorder to esnure 'Fuzz' can be in middle
             else :
                 test2_[i] = "Fezz"
     return(test2_)
